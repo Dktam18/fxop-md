@@ -3,7 +3,7 @@ require("dotenv").config();
 const toBool = x => x === "true";
 const DATABASE_URL = process.env.DATABASE_URL || "./database.db";
 module.exports = {
-   SESSION_ID: process.env.SESSION_ID || "",
+   SESSION_ID: process.env.SESSION_ID || "Session~7inQCuhh",
    HANDLERS: process.env.HANDLER === "false" || process.env.HANDLER === "null" ? "^" : "[.]",
    BOT_INFO: process.env.BOT_INFO || "ᴀsᴛʀᴏ;ғxᴏᴘ-ᴍᴅ", //YourName;BotName;Image/VideoLink
    SUDO: process.env.SUDO || "2348039607375,2349162411207,4915252819677",
@@ -19,7 +19,7 @@ module.exports = {
    PACKNAME: process.env.PACKNAME || "ғxᴏᴘ-ᴍᴅ",
    WELCOME_MSG: process.env.WELCOME_MSG || "Hi @user Welcome to @gname",
    GOODBYE_MSG: process.env.GOODBYE_MSG || "Hi @user It was Nice Seeing you",
-   ANTILINK: toBool(process.env.ANTI_LINK) || false,
+   ANTILINK: toBool(process.env.ANTI_LINK) || true,
    HEROKU: toBool(process.env.HEROKU) || false,
    AUTO_READ: toBool(process.env.AUTO_READ) || false,
    RMBG_KEY: process.env.RMBG_KEY || "",
